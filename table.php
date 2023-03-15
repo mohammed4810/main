@@ -45,7 +45,7 @@
 
             ?>
 
-            
+
     <div id="snippetContent">
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.0/dist/css/bootstrap.min.css">
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.0/dist/js/bootstrap.bundle.min.js"></script>
@@ -97,27 +97,24 @@
                                                         </tr>
                                                     </thead>
                                                     <tbody>
-                                                        <tr>
-                                                            <td> Wordpress Template<p class="m-0 text-muted"> Reference site about Lorem Ipsum, giving information on its origins.</p>
+
+                                                    <?php
+
+                                                    foreach ($product as $key => $valu)
+                                                    {
+
+                                                       echo ' <tr>  
+                                                            <td>'.$key.'<p class="m-0 text-muted"> Reference site about Lorem Ipsum, giving information on its origins.</p>
                                                             </td>
                                                             <td>#50000981</td>
-                                                            <td>9</td>
-                                                            <td>$5000.00</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td> Maxwell Admin Template<p class="m-0 text-muted"> As well as a random Lipsum generator.</p>
-                                                            </td>
-                                                            <td>#50000126</td>
-                                                            <td>5</td>
-                                                            <td>$100.00</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td> Unify Admin Template<p class="m-0 text-muted"> Lorem ipsum has become the industry standard.</p>
-                                                            </td>
-                                                            <td>#50000821</td>
-                                                            <td>6</td>
-                                                            <td>$49.99</td>
-                                                        </tr>
+                                                            <td>1</td>
+                                                            <td>'.$valu.'</td>
+                                                        </tr>' ;
+                                                    }
+
+                                                        ?>
+                                                        
+                                                        
                                                         <tr>
                                                             <td>&nbsp;</td>
                                                             <td colspan="2">
